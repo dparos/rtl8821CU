@@ -9689,7 +9689,7 @@ void rtw_wdev_unregister(struct wireless_dev *wdev)
 	rtw_cfg80211_indicate_scan_done(adapter, _TRUE);
 
 	#if (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 11, 0)) || defined(COMPAT_KERNEL_RELEASE)
-	#if (LINUX_VERSSION_CODE >= KERNEL_VEERSION(6, 0, 0)
+	#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 0, 0))
 		if (wdev->links[0].client.current_bss) {
 	#else
 		if (wdev->current_bss) {
